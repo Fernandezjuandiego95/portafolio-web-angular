@@ -1,0 +1,39 @@
+<section class="section-primary">  
+    <section class="section-start">
+        <div class="div-content">
+            
+            <app-button-disponible [buttonText]="'Disponible para trabajar'"/>
+
+            <h1>Hola!, soy Juan Fernández</h1>
+            <span class="span-ing"> <strong>Ingeniero de sistemas</strong> , nacido en Colombia.</span>
+            <br>
+            <span class="span-ing">Especializado en el desarrollo de aplicaciones web modernas.</span>
+            <div class="div-contact">
+                <app-button-contact 
+                [buttonText]="'Contáctame'" 
+                [buttonUrl]="'mailto:fernandezgonzalezjuandiego95@gmail.com'"
+                [buttonIcon]="'fa-regular fa-envelope'"
+                [isDownload]="false">
+                </app-button-contact>
+      
+              <app-button-contact 
+                [buttonText]="'LinkedIn'" 
+                [buttonUrl]="'https://www.linkedin.com/in/juan-diego-fernández-gonzález-264a70262'"
+                [buttonIcon]="'fa-brands fa-linkedin'"
+                [isDownload]="false">
+              </app-button-contact>
+      
+              <app-button-contact 
+                [buttonText]="'Descargar CV'" 
+                [buttonUrl]="'./../../../assets/cv/CV_Juan_Fernadez.pdf'"
+                [buttonIcon]="'fa-regular fa-file'"
+                [isDownload]="true">
+              </app-button-contact>
+            </div>
+        </div>
+
+        <div class="div-ilustration">
+            <img src="./../../../assets/img/coding.svg" alt="ilustracion" class="img-ilustration">
+        </div>
+    </section>
+</section>

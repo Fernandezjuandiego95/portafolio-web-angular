@@ -1,0 +1,32 @@
+footer{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(51, 51, 51, 0.416);
+    backdrop-filter: blur(15px);
+    border-top: 1px solid #fefffe59;
+    border-left: 1px solid #fefffe59;
+    transition: all 0.6s;
+}
+
+footer span{
+    font-size: 2vh;
+    font-weight: 500;
+    color: #c4c4c4;
+}
+
+footer img{
+    width: 40px;
+}
+
+@media all and (max-width:500px){
+    footer span{
+        font-size: 1.6vh;
+    }
+}

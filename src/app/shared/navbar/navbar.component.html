@@ -1,0 +1,26 @@
+<!-- navbar.component.html -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-estyle-prop">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ul-content">
+                    <li class="nav-item">
+                        <a class="nav-link" [class.active]="activeLink === 'sobremi'" (click)="setActiveLink('sobremi')" href="#sobremi">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [class.active]="activeLink === 'proyectos'" (click)="setActiveLink('proyectos')" href="#">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [class.active]="activeLink === 'certificados'" (click)="setActiveLink('certificados')" href="#certificados">Certificados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" [class.active]="activeLink === 'contacto'" (click)="setActiveLink('contacto')" href="mailto:fernandezgonzalezjuandiego95@gmail.com">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
