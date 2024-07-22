@@ -1,0 +1,36 @@
+<div class="card">
+    <div class="header">
+        <img [src]="urlImg">
+    </div>
+        <div class="info">
+            <p class="title">{{textTitulo}}</p>
+            <div>
+                @for (tecnologia of tecnologias; track $index) {
+                <span [ngStyle]="{'background-color': tecnologia.color}" class="tech-span">
+                    <i  [ngClass]="tecnologia.icon"></i> {{ tecnologia.name }}
+                </span>
+                }
+            </div>
+            <p id="descrip">{{textDescription}}</p>
+        </div>
+        <div class="footer">
+            @if (button1Text === "" && button1Url === "") {
+                
+            }@else {
+                <app-button-contact
+                [buttonText]="button1Text"
+                [buttonUrl]="button1Url"
+                [buttonIcon]="button1Icon" />
+            }
+
+            @if (button2Text === "" && button2Url === "") {
+            
+            }@else {
+                <app-button-contact
+                [buttonText]="button2Text"
+                [buttonUrl]="button2Url"
+                [buttonIcon]="button2Icon" />
+            }
+        
+        </div>
+</div>

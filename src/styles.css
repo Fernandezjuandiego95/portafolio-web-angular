@@ -16,6 +16,19 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.section-cont{
+    height: auto;
+  }
+  
+  .section-cont-sec{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+  }
 
 
 .h2{
@@ -23,5 +36,5 @@ body{
     font-weight: 700;
     color: #fefffe;
     margin-left: 3%;
-  }
+}
   
