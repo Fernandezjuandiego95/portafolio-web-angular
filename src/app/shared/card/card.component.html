@@ -6,7 +6,7 @@
             <p class="title">{{textTitulo}}</p>
             <div>
                 @for (tecnologia of tecnologias; track $index) {
-                <span [ngStyle]="{'background-color': tecnologia.color}" class="tech-span">
+                <span [ngStyle]="{'background': tecnologia.color}" class="tech-span">
                     <i  [ngClass]="tecnologia.icon"></i> {{ tecnologia.name }}
                 </span>
                 }

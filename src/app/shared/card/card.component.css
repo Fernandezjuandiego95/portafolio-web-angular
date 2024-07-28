@@ -27,7 +27,9 @@
     width: 100%;
     height: 100%;
     border-radius: 0.75rem;
-
+    opacity: .7;
+    border: 2px solid #fefffe6c;
+    transition: border, opacity .5s ease;
   }
 
 
@@ -71,17 +73,16 @@
     margin: 5px;
     border-radius: 30px;
     color: rgb(1, 5, 76);
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 600;
-    cursor: pointer;
     text-shadow: 2px 2px 3px #005b418b;
     display: inline-block;
-    transition: border, opacity 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.5);
   }
 
-  .tech-span:hover,  .header img:hover{
-    opacity: .7;
-    border: 2px solid #fefffe6c;
+    .header img:hover{
+    opacity: 1;
+    border: none;
   }
 
 
